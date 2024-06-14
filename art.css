@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #c850c0, #4158d0);
+    height: 100vh;
+}
+
+.magic-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.magic-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.magic-nav ul li {
+    position: relative;
+}
+
+.magic-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.magic-nav ul li a i {
+    margin-right: 8px;
+}
+
+.magic-nav ul li a:hover {
+    color: rgba(195, 211, 255, 0.879);
+}
+
+.magic-nav ul li a::before,
+.magic-nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: rgba(142, 159, 255, 0.762);
+    transition: 0.4s;
+}
+
+.magic-nav ul li a::before {
+    top: 0;
+    left: 0;
+}
+
+.magic-nav ul li a::after {
+    bottom: 0;
+    right: 0;
+}
+
+.magic-nav ul li a:hover::before,
+.magic-nav ul li a:hover::after {
+    width: 100%;
+}
+
+.magic-nav ul li a::after {
+    width: 0;
+}
