@@ -39,6 +39,7 @@ body {
     transition: color 0.3s;
     display: flex;
     align-items: center;
+    /* Just Donat */
 }
 
 .magic-nav ul li a i {
@@ -57,6 +58,7 @@ body {
     height: 3px;
     background: rgba(142, 159, 255, 0.762);
     transition: 0.4s;
+    /* Just Donat */
 }
 
 .magic-nav ul li a::before {
@@ -66,6 +68,7 @@ body {
 
 .magic-nav ul li a::after {
     bottom: 0;
+    /* Just Donat */
     right: 0;
 }
 
